@@ -21,7 +21,9 @@ Lastly, you will need a Python extension.
 
 Your VSC program may not give you access to all the features you need by default, including extensions, depending on which folder it is running in.
 If you see this warning at the top, you must "trust" the folder.
+
 <img width="727" height="76" alt="image" src="https://github.com/user-attachments/assets/75c36dbf-2b7a-4fec-866f-4c5416153f3c" />
+
 Click on "Managed" and then "Trust" to do that.
 
 
