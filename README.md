@@ -24,6 +24,13 @@ If you see this warning at the top, you must "trust" the folder.
 
 <img width="727" height="76" alt="image" src="https://github.com/user-attachments/assets/75c36dbf-2b7a-4fec-866f-4c5416153f3c" />
 
-Click on "Managed" and then "Trust" to do that.
+Click on "Manage" and then "Trust" to do that.
+
+# 3. PowerShell and other shells
+A *shell* is a text-based program that reads commands and does things. 
+If you have ever done command-line work, you've worked with a shell.
+Most of the readers of this guide are probably using Windows, and for that operating system, the modern shell to use is called PowerShell. 
+In our Python work we will typically interact with PowerShell only through VSC.
+But here we'll start by running PowerShell in the Windows terminal program (the window that runs shells) just for understanding.
 
 
