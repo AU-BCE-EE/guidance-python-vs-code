@@ -97,8 +97,9 @@ This window will now act like any interactive Python instance, for example,
 If you are working on a Mac, the shell is called, somewhat confusingly, Terminal.
 And on Linux, Bash is the most popular shell. 
 
-# 4. Getting started with VS Code
-## Projects
+# 4. VS Code projects
+Now we'll work in VS Code.
+
 VSC uses something called *projects* to keep track of all the files involved in a project or assignment.
 There is really only one part of this that is important to us--to set the project location before working.
 
@@ -122,7 +123,7 @@ What does this do?
 It ensures that when Python is run it will have this folder as the *working directory*, i.e., the location where Python looks for files and saves output.
 Making sure that you start with this `open folder` step avoids a whole lot of problems related to file paths!
 
-## Create a script
+# 5. Create a script in VS Code
 A *script* is just a text file with commands in Python or some other computer language.
 Python scripts are typically named with the `.py` extension, e.g., `simple1.py`. 
 Windows users may think there is a lot of magic in file extensions, but they are simply part of a file name.
@@ -152,7 +153,7 @@ You should see that the default location is your project folder--perfect!
 
 Alternatively, you can open the `simple1.py` script that is included in this repo.
 
-## Script mode
+# 6. Run a scrip in Python in "script mode"
 Under the `Terminal` menu select `New terminal.
 You should then see something like this at the bottom of your VSC window:
 
