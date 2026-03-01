@@ -4,13 +4,13 @@ Sasha D. Hafner
 # 1. Overview
 
 This guide provides information on using Python the Visual Studio Code, a flexible and free integrated development environment (IDE) that works particularly well for Python.
-Altong with relevenat background, this guide includes three main ways to use Python in VS Code: 
+Altong with relevant background, this guide includes three main ways to use Python in VS Code: 
 
 1. **Interactive** by typing directly into a Python interpreter
 2. **Script mode** by calling Python and running script in shell non-interactively
 3. **Interactive script development** by sending script code by line or section to the Python interpreter
 
-These are not the only ways Python can be usedin VSC.
+These are not the only ways Python can be used in VSC.
 But they are perfectly sufficient for the majority of our needs in projects and courses.
 Some users may prefer a Jupyter Notebook-based approach or a Quarto report.
 Both are supported by VSC but are not covered in this guide.
@@ -97,11 +97,15 @@ This window will now act like any interactive Python instance, for example,
 If you are working on a Mac, the shell is called, somewhat confusingly, Terminal.
 And on Linux, Bash is the most popular shell. 
 
-# 4. Using VS Code
-## 4.1. Projects
+# 4. Getting started with VS Code
+## Projects
+VSC uses something called *projects* to keep track of all the files involved in a project or assignment.
+There is really only one part of this that is important to us--to set the project location before working.
+
 Let's open up VSC and start and new project.
 First, make sure you have a directory or folder for your project.
 To follow along with this guide, you can create a folder called `simple_project` in any appropriate location on your local computer.
+(Or, you can clone this repo and use the `demos/simple_project` folder that is included.)
 Then, in VSC, under the `File` menu, click `Open folder`, 
 
 <img width="1487" height="381" alt="image" src="https://github.com/user-attachments/assets/908e8994-9553-46d5-917f-35d7f64f6d72" />
@@ -112,7 +116,46 @@ and browse to your folder,
 
 and click "Open".
 
+Alternatively, you can hit `Ctrl + k` followed by `Ctrl + o`, and browse to the correct folder.
+
 What does this do?
+It ensures that when Python is run it will have this folder as the *working directory*, i.e., the location where Python looks for files and saves output.
+Making sure that you start with this `open folder` step avoids a whole lot of problems related to file paths!
+
+## Create a script
+A *script* is just a text file with commands in Python or some other computer language.
+Python scripts are typically named with the `.py` extension, e.g., `simple1.py`. 
+Windows users may think there is a lot of magic in file extensions, but they are simply part of a file name.
+
+In VS Code you can create a new script with the `File` menu by selecting `New File` or `New Text File` (or using the keyboard shortcuts that are shown in the menu, e.g., `Ctrl + n`).
+Do this, add some content, e.g.,
+
+```
+"""
+file: simple1.py
+author: Your Name
+
+description:
+    A simple Python script
+"""
+
+print("If this message is printed, you ran this script!")
+
+x = 10 + 2
+
+print('Here is a sum:', x)
+```
+
+and save the file with 
+
+## Open terminal window
+Under the `Terminal` menu select `New terminal.
+You should then see something like this at the bottom of your VSC window:
+
+<img width="1427" height="214" alt="image" src="https://github.com/user-attachments/assets/4c6ea7cb-f2cc-433c-b8c3-e48942396cd5" />
+
+
+
 
 # Other resources
 https://realpython.com/interacting-with-python/
