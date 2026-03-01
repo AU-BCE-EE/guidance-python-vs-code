@@ -3,6 +3,12 @@ Sasha D. Hafner
 
 # 1. Overview
 
+This guide will cover three main ways to use Python in VS Code: 
+
+1. Interactively by typing directly in Python
+2. By line or section, working in script edititor and sending code to Python window
+3. Script mode, calling Python and running script in shell
+
 # 2. Installing software
 ## VS Code
 Visual Studio Code, VS Code, or, as we'll call it, VSC, is a free "integrated development environment" (IDE) produced by Microsoft.
@@ -71,5 +77,9 @@ This window will now act like any interactive Python instance, for example,
 
 If you are working on a Mac, the shell is called, somewhat confusingly, Terminal.
 And on Linux, Bash is the most popular shell. 
+
+# 4. Interactive Python in VS Code
+Let's open up VSC and start and new project. 
+
 
 
