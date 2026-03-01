@@ -189,7 +189,33 @@ If you saw an error message about `python` not being recognized, check that you 
 
 If you prefer clicking buttons, you can click this "Run in Python" button at the top right of VS Code:
 
-<img width="1091" height="213" alt="image" src="https://github.com/user-attachments/assets/7bf79736-b6b6-4a3e-9649-878096c80767" />
+<img width="1385" height="135" alt="image" src="https://github.com/user-attachments/assets/6129d1ee-5937-414b-a1a9-5b03b7c68660" />
+
+What does that do?
+The button sends a command to a terminal window.
+The overall effect is the same as explicitly opening a terminal and typing `python simple1.py`, but there are some differences.
+Here is what you should see below:
+
+<img width="1450" height="169" alt="image" src="https://github.com/user-attachments/assets/233fabbe-e5f5-4422-92ef-7940a76db43e" />
+
+First, note that the actual command is different from what you manually typed.
+This "Run" button generates a very explicit command, with the complete path to both the python executable and your script included.
+This is a bit safer, in that it is less susceptible to details about how you installed Python.
+
+Second, did you notice that this command was sent to a new terminal window, running a different instance of PowerShell?
+Unless you already closed it, the one that was opened from the `Terminal` menu is still open, but hidden.
+Click here to go back to it:
+
+<img width="1386" height="144" alt="image" src="https://github.com/user-attachments/assets/974bda0b-ccef-4874-87c4-8b68d184f45f" />
+
+The "Run" button will never use it though--it will use a designated terminal window that it opens if needed.
+So if we click that button again, the newer instance is used.
+If you prefer the button and the VS Code-spawned terminal window, you can close the original one (or any others) with this "trash/kill" button:
+
+<img width="1387" height="84" alt="image" src="https://github.com/user-attachments/assets/5f602ae6-de5d-437b-8c92-a2d331b6efb2" />
+
+
+
 
 
 
