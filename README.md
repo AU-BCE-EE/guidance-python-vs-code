@@ -128,7 +128,8 @@ Python scripts are typically named with the `.py` extension, e.g., `simple1.py`.
 Windows users may think there is a lot of magic in file extensions, but they are simply part of a file name.
 
 In VS Code you can create a new script with the `File` menu by selecting `New File` or `New Text File` (or using the keyboard shortcuts that are shown in the menu, e.g., `Ctrl + n`).
-Do this, add some content, e.g.,
+You can now edit the file using the feature-rich script editor.
+Open a new file and add some content, e.g.,
 
 ```
 """
@@ -146,14 +147,26 @@ x = 10 + 2
 print('Here is a sum:', x)
 ```
 
-and save the file with 
+Then save the file with `Ctrl + s` or `Save` under the `File` menu.
+You should see that the default location is your project folder--perfect!
 
-## Open terminal window
+Alternatively, you can open the `simple1.py` script that is included in this repo.
+
+## Script mode
 Under the `Terminal` menu select `New terminal.
 You should then see something like this at the bottom of your VSC window:
 
 <img width="1427" height="214" alt="image" src="https://github.com/user-attachments/assets/4c6ea7cb-f2cc-433c-b8c3-e48942396cd5" />
 
+How can you tell this is a PowerShell terminal?
+Take a look:
+
+<img width="1420" height="154" alt="image" src="https://github.com/user-attachments/assets/be613d51-ce46-4b61-a806-ea1f0f6e87d6" />
+
+You should be able to tell because the prompt starts with `PS` and ends with `>`.
+Also, can you see the `powershell` label toward the upper right?
+
+<img width="1420" height="154" alt="image" src="https://github.com/user-attachments/assets/9cfbb6bd-cff9-4f62-aaeb-696f69ca1be7" />
 
 
 
