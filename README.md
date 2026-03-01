@@ -214,6 +214,53 @@ If you prefer the button and the VS Code-spawned terminal window, you can close 
 
 <img width="1387" height="84" alt="image" src="https://github.com/user-attachments/assets/5f602ae6-de5d-437b-8c92-a2d331b6efb2" />
 
+What if you wrote another script with only this line:
+
+```
+print(x)
+```
+
+Would it in fact print the value of `x`, calculcated in the `simple1.py` script?
+
+We can try to prove a point!
+
+<img width="1391" height="173" alt="image" src="https://github.com/user-attachments/assets/9f011eff-9814-4677-8682-337f8e335356" />
+
+Nope!
+Why not?
+Because that is the behavior of an *interactive Python session* but we are running Python in *script mode*.
+When we call `python simple1.py`, the Python interpreter is started, it runs the code in the `simple1.py` script **and then closes**.
+Whatever variables were created by code in the script are lost.
+For a different approach, see the next section.
+
+# 7. Interactive script development
+In many cases, especially when learning something new about Python, it is best to send only a single line or piece from a script.
+This lets you check code as you write it.
+And because the same instance of the Python interpreter stays open, any variables you created *persist*, that is until you close the interpreter.
+
+Let's keep working with the simple1.py script. 
+The simplest way to send a line of code is the `Shift + Enter`. 
+Here is what you should see if you try that:
+
+<img width="1199" height="163" alt="image" src="https://github.com/user-attachments/assets/aef04a53-7091-4dc2-a426-85a2ffc0ef91" />
+
+First, see that it worked.
+Second, it did the job by opening a Python interpreter, and then sending the line of code.
+You can see the command for starting Python at the top.
+The telltale Python prompt is circled in bright green.
+And the line of code submitted to the interpreter is underlined in light blue.
+
+If you try the `Shift + Enter` shortcut again, VS Code recognizes that there is already a Python interpreter running, so it just sends the code. 
+And if you send the following lines, Python works as expected, "remembering" the value of `x`, because all this code is run in the same instance of Python.
+
+<img width="1290" height="564" alt="image" src="https://github.com/user-attachments/assets/671eb382-7370-43b5-80d4-d3115716ce11" />
+
+The cursor in the script editor automatically advances to the next line of Python code when you use `Shift + Enter`.
+So it is easy to run a few lines sequentially without moving your fingers from the `Shift` and `Enter` keys.
+But if you want to run several lines, you can highlight (select) them with the trackpad/mouse or keyboard (`Shift` and arrow keys) and hit `Shit + Enter` again.
+Simple!
+
+
 
 
 
