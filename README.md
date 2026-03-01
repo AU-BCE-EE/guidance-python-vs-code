@@ -9,6 +9,11 @@ This guide will cover three main ways to use Python in VS Code:
 2. By line or section, working in script edititor and sending code to Python window
 3. Script mode, calling Python and running script in shell
 
+The repository for this guide includes demos that can be run locally. 
+
+Some of what is covered in this guide is independent of VS Code.
+The distinction will be spelled out.
+
 # 2. Installing software
 ## VS Code
 Visual Studio Code, VS Code, or, as we'll call it, VSC, is a free "integrated development environment" (IDE) produced by Microsoft.
@@ -78,8 +83,23 @@ This window will now act like any interactive Python instance, for example,
 If you are working on a Mac, the shell is called, somewhat confusingly, Terminal.
 And on Linux, Bash is the most popular shell. 
 
-# 4. Interactive Python in VS Code
-Let's open up VSC and start and new project. 
+# 4. Using VS Code
+## 4.1. Projects
+Let's open up VSC and start and new project.
+First, make sure you have a directory or folder for your project.
+To follow along with this guide, you can create a folder called `simple_project` in any appropriate location on your local computer.
+Then, in VSC, under the `File` menu, click `Open folder`, 
+
+<img width="1487" height="381" alt="image" src="https://github.com/user-attachments/assets/908e8994-9553-46d5-917f-35d7f64f6d72" />
+
+and browse to your folder,
+
+<img width="1564" height="763" alt="image" src="https://github.com/user-attachments/assets/3925bb3f-2507-4b46-9b4e-71dbbb84c3e3" />
+
+and click "Open".
+
+What does this do?
+
 
 
 
