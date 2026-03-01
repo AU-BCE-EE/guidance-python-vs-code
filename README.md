@@ -156,17 +156,36 @@ Alternatively, you can open the `simple1.py` script that is included in this rep
 Under the `Terminal` menu select `New terminal.
 You should then see something like this at the bottom of your VSC window:
 
-<img width="1427" height="214" alt="image" src="https://github.com/user-attachments/assets/4c6ea7cb-f2cc-433c-b8c3-e48942396cd5" />
-
-How can you tell this is a PowerShell terminal?
-Take a look:
-
 <img width="1420" height="154" alt="image" src="https://github.com/user-attachments/assets/be613d51-ce46-4b61-a806-ea1f0f6e87d6" />
 
+How can you tell this is a PowerShell terminal?
+Take a look above.
 You should be able to tell because the prompt starts with `PS` and ends with `>`.
 Also, can you see the `powershell` label toward the upper right?
 
-<img width="1420" height="154" alt="image" src="https://github.com/user-attachments/assets/9cfbb6bd-cff9-4f62-aaeb-696f69ca1be7" />
+So this is *not* a Python interpreter.
+But it *is* exactly what we need to run the `simpler1.py` script in Python in script mode.
+To do that, click in the terminal window and enter this command:
+
+```
+python simple1.py
+```
+
+You should see this:
+
+<img width="1416" height="207" alt="image" src="https://github.com/user-attachments/assets/dfca20e2-2a23-4427-9620-23885bbcfe93" />
+
+If you get an error like the one below, check the script name spelling.
+
+<img width="1450" height="159" alt="image" src="https://github.com/user-attachments/assets/5963428b-bf22-4334-99ae-1bbb97300af3" />
+
+Or, did you forget to open the correct folder?
+Remember that this window is a PowerShell terminal, so you have access to commands that can help, like `ls`.
+
+<img width="1461" height="306" alt="image" src="https://github.com/user-attachments/assets/67b39692-4197-41c0-a640-662e1d2719da" />
+
+If you saw an error message about `python` not being recognized, check that you have actually installed Python.
+
 
 
 
