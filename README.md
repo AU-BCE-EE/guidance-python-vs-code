@@ -3,16 +3,30 @@ Sasha D. Hafner
 
 # 1. Overview
 
-This guide will cover three main ways to use Python in VS Code: 
+This guide provides information on using Python the Visual Studio Code, a flexible and free integrated development environment (IDE) that works particularly well for Python.
+Altong with relevenat background, this guide includes three main ways to use Python in VS Code: 
 
-1. Interactively by typing directly in Python
-2. By line or section, working in script edititor and sending code to Python window
-3. Script mode, calling Python and running script in shell
+1. **Interactive** by typing directly into a Python interpreter
+2. **Script mode** by calling Python and running script in shell non-interactively
+3. **Interactive script development** by sending script code by line or section to the Python interpreter
 
-The repository for this guide includes demos that can be run locally. 
+These are not the only ways Python can be usedin VSC.
+But they are perfectly sufficient for the majority of our needs in projects and courses.
+Some users may prefer a Jupyter Notebook-based approach or a Quarto report.
+Both are supported by VSC but are not covered in this guide.
+You should recognize that other approaches exist and you may accidentially discover them in VSC by clicking the wrong button!
 
-Some of what is covered in this guide is independent of VS Code.
-The distinction will be spelled out.
+This guidance document is written in Markdown, and is meant to be viewed online, where GitHub will render the Markdown formatting and include images of the screenshots.
+But the repository (repo) includes demos that can be run locally, so it can be helpful to clone the repo and work with the folders and scripts.
+
+Much of what is covered in this guide is specific to VSC.
+But any Python code or shell commands are not--they could be applied independent of VSC.
+
+The rest of this guide includes:
+
+* installing software (section 2), which can be skipped if Python and VSC are already installed,
+* PowerShell and other shells (section 3), which includes some important conceptual background but could be skimmed,
+* 
 
 # 2. Installing software
 ## VS Code
@@ -99,6 +113,10 @@ and browse to your folder,
 and click "Open".
 
 What does this do?
+
+# Other resources
+https://realpython.com/interacting-with-python/
+https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-the-difference-between-interactive-and-script-mode-in-python-programming/
 
 
 
