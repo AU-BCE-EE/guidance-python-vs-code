@@ -187,6 +187,9 @@ Remember that this window is a PowerShell terminal, so you have access to comman
 
 If you saw an error message about `python` not being recognized, check that you have actually installed Python.
 
+If you prefer clicking buttons, you can click this "Run in Python" button at the top right of VS Code:
+
+<img width="1091" height="213" alt="image" src="https://github.com/user-attachments/assets/7bf79736-b6b6-4a3e-9649-878096c80767" />
 
 
 
