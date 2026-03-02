@@ -20,13 +20,18 @@ But all Python code and PowerShell commands are could be applied outside of VS C
 
 The rest of this guide includes:
 
-* interactive use of Python interpreter
-* first steps (section 2),
-* creating a script (section 3),
-* 
 * installing software (section 2), which can be skipped if Python and VS Code are already installed,
-* PowerShell and other shells (section 3), which includes some important conceptual background but could be skimmed,
-* 
+* introduction to PowerShell (section 3)
+* running Python in script mode and interactively in Powershell (section 4)
+* opening a terminal pane and running Python in VS Code (section 5)
+* **VS Code projects (section 6)**
+* **Working with scripts in VS Code (section 7)**
+* **Script mode Python usage in VS Code (section 8)**
+* **Interactive script development and sending script lines or sections (section 9)**
+* troubleshooting (section 10)
+* summary 
+
+Those section names shown in **bold** are key sections that should not be skipped!
 
 # 2. Installing software
 ## VS Code
@@ -110,7 +115,8 @@ Take a look above.
 You should be able to tell because the prompt starts with `PS` and ends with `>`.
 Also, can you see the `powershell` label toward the upper right?
 
-Click in that pane and `python`, and now you are in an interactive Python session.
+Click in that pane and type `python`, followed by hitting `Enter`.
+Now you are in an interactive Python session.
 Do you see that the prompt changed?
 This may be a quick way to check some ideas in Python, but for a couple reasons is not the best way to use Python in VS Code.
 See the next sections for better options.
