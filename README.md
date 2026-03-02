@@ -20,18 +20,18 @@ But all Python code and PowerShell commands can be applied outside of VS Code.
 
 The rest of this guide includes:
 
-* installing software (section 2), which can be skipped if Python and VS Code are already installed,
+* installing software (section 2),
 * introduction to PowerShell (section 3)
-* running Python in script mode and interactively in Powershell (section 4)
-* opening a terminal pane and running Python in VS Code (section 5)
-* **VS Code projects (section 6)**
-* **Working with scripts in VS Code (section 7)**
-* **Script mode Python usage in VS Code (section 8)**
-* **Interactive script development and sending script lines or sections (section 9)**
-* troubleshooting (section 10)
-* summary 
+* running Python in PowerShell--script and interactive mode (section 4),
+* opening a terminal pane and running Python in VS Code (section 5),
+* **VS Code projects (section 6)**,
+* **Working with scripts in VS Code (section 7)**,
+* **Script mode Python usage in VS Code (section 8)**,
+* **Interactive script development and running (section 9)**,
+* troubleshooting (section 10),
+* summary (section 11)
 
-Those section names shown in **bold** are key sections that should not be skipped!
+Those section names shown in **bold** are key sections.
 
 # 2. Installing software
 ## VS Code
