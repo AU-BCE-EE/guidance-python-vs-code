@@ -108,10 +108,9 @@ This window will now act like any interactive Python instance, for example,
 Open up VS Code and open a terminal window at the bottom through the `Terminal` menu by clicking on `New terminal`.
 Now you will see PowerShell running in the terminal pane at the bottom of VS Code, like this:
 
-XXXXXXXXXXXXX
+<img width="1285" height="192" alt="image" src="https://github.com/user-attachments/assets/357d8eac-2727-44a5-9173-a17db9cabf23" />
 
 How can you tell this is a PowerShell terminal?
-Take a look above.
 You should be able to tell because the prompt starts with `PS` and ends with `>`.
 Also, can you see the `powershell` label toward the upper right?
 
