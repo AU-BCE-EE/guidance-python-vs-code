@@ -1,4 +1,4 @@
-# Using Visual Studio Code for Python
+# An introduction to Visual Studio Code for Python
 Sasha D. Hafner
 
 # 1. Overview
@@ -144,7 +144,7 @@ What does this do?
 It ensures that when Python is run it will have this folder as the *working directory*, i.e., the location where the Python interpreter looks for files and saves output.
 *Making sure that you start with this `open folder` step avoids a whole lot of problems related to file paths!*
 
-# 7. Create a script in VS Code
+# 7. Create and edit a script in VS Code
 A *script* is just a text file with commands in Python or some other computer language.
 Python scripts are typically named with the `.py` extension, e.g., `simple1.py`. 
 
@@ -172,7 +172,14 @@ Then save the file with `Ctrl + s` or `Save` under the `File` menu.
 You should see that the default location is your project folder--perfect!
 
 Alternatively, you can open the `simple1.py` script that is included in this repo.
-But remember the `Open foler` step from above!
+But remember the `Open folder` step from above!
+
+VS Code has several features that are meant to make script editing easier. 
+Syntax highlighting is obvious here:
+
+<img width="1188" height="545" alt="image" src="https://github.com/user-attachments/assets/1a80dff6-ead1-43c1-94ba-03e8e74e4422" />
+
+Be sure to save your script occasionally when editing it, and before you try to run it in script mode (next section).
 
 # 8. Run a scrip in Python in "script mode"
 Under the `Terminal` menu select `New terminal`.
@@ -252,9 +259,11 @@ Whatever variables were created by code in the script are lost.
 For a different approach, see the next section.
 
 # 9. Interactive script development
-In many cases, especially when learning something new about Python, or developing a script with multiple steps, it is best to send only a single line or piece from a script.
+In many cases, especially when learning something new about Python, or developing a script with multiple steps, it is helpful to be able to send only a single line or piece from a script.
 This lets you check code as you write it, and you can be sure exactly which lines cause errors.
 And because the same instance of the Python interpreter stays open, any variables you created *persist* until you close the Python interpreter.
+You could get by by always running scripts in script mode, and checking any error messages if there are problems, perhaps using `breakpoint()` once in a while to go through code line-by-line.
+But the interactive script development approach described here is probably easier and quicker.
 
 Let's keep working with the simple1.py script. 
 The simplest way to send a line of code is the `Shift + Enter` keyboard shortcut. 
@@ -266,6 +275,10 @@ It did the job by opening a Python interpreter, and then sending the single line
 You can see the command for starting Python at the top.
 The telltale Python prompt is circled in bright green.
 And the line of code submitted to the interpreter is underlined in light blue.
+
+If you prefer using a menu option (I am not sure why anyone would), you can find it by right-clicking on the line or selection, then scrolling way down to here:
+
+<img width="1018" height="947" alt="image" src="https://github.com/user-attachments/assets/6a98105c-3a61-45ab-bd06-9d1b09b168ed" />
 
 If you try the `Shift + Enter` shortcut again, VS Code recognizes that there is already a Python interpreter running, so it just sends the code. 
 And if you send the following lines, Python works as expected, "remembering" the value of `x`, because all this code is run in the same instance of Python.
