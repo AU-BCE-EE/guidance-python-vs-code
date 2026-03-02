@@ -3,34 +3,34 @@ Sasha D. Hafner
 
 # 1. Overview
 
-This guide provides information on using Python the Visual Studio Code, a flexible and free integrated development environment (IDE) that works particularly well for Python.
-Altong with relevant background, this guide includes three main ways to use Python in VS Code: 
+This guide provides basic information on using Python in Visual Studio Code, a flexible and free integrated development environment (IDE).
+It covers three main ways to use Python in VS Code: 
 
 1. **Interactive** by typing directly into a Python interpreter
 2. **Script mode** by calling Python and running script in shell non-interactively
 3. **Interactive script development** by sending script code by line or section to the Python interpreter
 
-These are not the only ways Python can be used in VSC.
-But they are perfectly sufficient for the majority of our needs in projects and courses.
-Some users may prefer a Jupyter Notebook-based approach or a Quarto report.
-Both are supported by VSC but are not covered in this guide.
-You should recognize that other approaches exist and you may accidentially discover them in VSC by clicking the wrong button!
+These are not the only ways Python can be used in VS Code, but they are perfectly sufficient for the majority of our project and class needs.
+You should recognize that other approaches (including Jupyter Notebooks) exist and you may accidentially discover them in VS Code by clicking the wrong button!
 
-This guidance document is written in Markdown, and is meant to be viewed online, where GitHub will render the Markdown formatting and include images of the screenshots.
-But the repository (repo) includes demos that can be run locally, so it can be helpful to clone the repo and work with the folders and scripts.
+This document is written in Markdown, and is meant to be viewed online, where GitHub will render the Markdown formatting and include images of the screenshots.
 
-Much of what is covered in this guide is specific to VSC.
-But any Python code or shell commands are not--they could be applied independent of VSC.
+Much of what is covered in this guide is specific to VS Code.
+But all Python code and PowerShell commands are could be applied outside of VS Code.
 
 The rest of this guide includes:
 
-* installing software (section 2), which can be skipped if Python and VSC are already installed,
+* interactive use of Python interpreter
+* first steps (section 2),
+* creating a script (section 3),
+* 
+* installing software (section 2), which can be skipped if Python and VS Code are already installed,
 * PowerShell and other shells (section 3), which includes some important conceptual background but could be skimmed,
 * 
 
 # 2. Installing software
 ## VS Code
-Visual Studio Code, VS Code, or, as we'll call it, VSC, is a free "integrated development environment" (IDE) produced by Microsoft.
+Visual Studio Code, VS Code, or, as we'll call it, VS Code, is a free "integrated development environment" (IDE) produced by Microsoft.
 It is a simpler version of Visual Studio with fewer features.
 If you don't already have it, you can download it from here: <https://code.visualstudio.com/download>
 
@@ -39,75 +39,91 @@ Python (3) should be installed from here: <https://www.python.org/downloads/>.
 
 ## VS Code Python extension
 Lastly, you will need a Python extension.
-1. Open up VSC and click the Extensions icon (near top left, looks like four squares) or use `Ctrl + Shift + x`.
+1. Open up VS Code and click the Extensions icon (near top left, looks like four squares) or use `Ctrl + Shift + x`.
 2. Search for `Python`.
 3. Carefully find the one published by Microsoft that has a description similar to this: "Python language support with extension access points for IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, refactoring, unit tests, and more."
 4. Install it.
 
-Your VSC program may not give you access to all the features you need by default, including extensions, depending on which folder it is running in.
+Your VS Code program may not give you access to all the features you need by default, including extensions, depending on which folder it is running in.
 If you see this warning at the top, you must "trust" the folder.
 
 <img width="727" height="76" alt="image" src="https://github.com/user-attachments/assets/75c36dbf-2b7a-4fec-866f-4c5416153f3c" />
 
 Click on "Manage" and then "Trust" to do that.
 
-# 3. PowerShell and other shells
+# 3. PowerShell
 A *shell* is a text-based program that reads commands and does things. 
-If you have ever done command-line work, you've worked with a shell.
-Most of the readers of this guide are probably using Windows, and for that operating system, the modern shell to use is called PowerShell. 
-In our Python work we will typically interact with PowerShell only through VSC.
-But here we'll start by running PowerShell in the Windows terminal program (the window that runs shells) just for understanding.
+Most of the readers of this guide are probably using Windows, and for that operating system, the modern shell that you should use is called *PowerShell*. 
+In your Python work you may mostly interact with PowerShell through VS Code.
+But here we'll start by running PowerShell outside of VS Code in the Windows terminal program (the window that runs shells), partilally for understanding.
 
-Open up PowerShell (hit the Windows or super key ⊞ and type PowerShell), and you should see something like this:
+Open up PowerShell (e.g., hit the Windows or super key ⊞ and type PowerShell), and you should see something like this:
 
 <img width="1112" height="316" alt="image" src="https://github.com/user-attachments/assets/5451e621-f61d-42f1-9c53-f739cc62d8be" />
 
 The bit at the left, `PS C:\Users\au594831>` is called the "prompt".
 The single `>` is one way to tell you are working in PowerShell.
+It will look the same when you open it up in VS Code.
+And while you can do a lot in VS Code by clicking buttons, you still need to aware of what is running in the terminal window below.
 
-There are many commands that PowerShell understands, for example, `cd .\GitHub_repos` to change to a folder (directory) named "GitHub_repos", `ls` to list the contents of the current directory, and `python scrip1.py` to run a script called "script1.py" in Python (if it has been installed). 
-The `mv`, `rm`, and `cp` commands are for moving, removing (deleting), and copying files--use them carefully!
+(If you are working with Mac OS, the shell is just called *Terminal*, and on Linux it could be *Bash* or another shell program.
+The few commands we will cover here are identical in all three, so you can use the appropriate program but replace PowerShell with e.g., Terminal or Bash and follow the instructions.)
 
-Here is an example PowerShell session.
+There are many commands that PowerShell understands.
+You can probably work with PowerShell in VS Code without knowing any PowerShell commands, but anyone working on Windows should really know some, and these are some useful ones:
 
-<img width="1089" height="580" alt="image" src="https://github.com/user-attachments/assets/4c927927-c3c4-4800-ad06-8325e09ba183" />
+* `cd folder_x`: *change directory* or move to the specified directory (folder), here called `folder_x` within the current directory
+* `cd ..`: use the `..` syntax to *go up one level*
+* `ls`: *list* all files and directories within the current directory
+* `cp file1.py file2.py` *copy* a file
+* `mv file1.py file2.py` *move* a file
+* `rm file1.py` *remove* (delete!) a file
 
-Try some of these commands yourself, but in a temporary directory with some junk files!
-
+# 4. Using Python in a shell
 Python scripts can be run directly in PowerShell with the `python` command. 
-For example, the command below ran all the code in the `demo.py` script in Python.
+This is the *script mode* listed at the top of this document.
+The command is `python script_name.py`.
+Of course, this requires that `script_name.py` is in the current directory in PowerShell. 
 
-<img width="1104" height="148" alt="image" src="https://github.com/user-attachments/assets/4761a0a9-bd72-4305-bd6a-781ae2a34d27" />
-
-A shell can also run some programs interactively, including Python.
-To do that, just type `python` at the prompt, like this:
+A shell can also run Python interactively.
+To start an instance of the Python interpreter, just type `python` at the prompt, like this:
 
 <img width="1105" height="177" alt="image" src="https://github.com/user-attachments/assets/7a0dcede-b838-4683-88aa-d09a8ace90dd" />
 
 Notice how the prompt now looks different?
-Like this, but also fuchsia in color: `>>>`.
+Like this: `>>>`, and also fuchsia in color.
 That is a hint to show that you are now in a Python *interpreter*, which will read any commands you enter and evaluate them.
 This type of programming environment is called a REPL, from "read-evaluate-print loop".
-You will see the term REPL a lot in this guidance, where it refers to a terminal window running Python interactively.
 
 This window will now act like any interactive Python instance, for example,
 
 <img width="1101" height="243" alt="image" src="https://github.com/user-attachments/assets/1ea6e9dd-dc66-422a-9487-04b0731a8f6c" />
 
-If you are working on a Mac, the shell is called, somewhat confusingly, Terminal.
-And on Linux, Bash is the most popular shell. 
+# 5. Terminal window and PowerShell in VS Code
+Open up VS Code and open a terminal window at the bottom through the `Terminal` menu by clicking on `New terminal`.
+Now you will see PowerShell running in the terminal pane at the bottom of VS Code, like this:
 
-# 4. VS Code projects
-Now we'll work in VS Code.
+XXXXXXXXXXXXX
 
-VSC uses something called *projects* to keep track of all the files involved in a project or assignment.
-There is really only one part of this that is important to us--to set the project location before working.
+How can you tell this is a PowerShell terminal?
+Take a look above.
+You should be able to tell because the prompt starts with `PS` and ends with `>`.
+Also, can you see the `powershell` label toward the upper right?
 
-Let's open up VSC and start and new project.
+Click in that pane and `python`, and now you are in an interactive Python session.
+Do you see that the prompt changed?
+This may be a quick way to check some ideas in Python, but for a couple reasons is not the best way to use Python in VS Code.
+See the next sections for better options.
+
+# 6. VS Code projects
+VS Code uses something called *projects* to keep track of all the files involved in a project or assignment.
+There is really only one part of this that is important to us--to set the project location *before* working.
+
+Let's open up VS Code and start and new project.
 First, make sure you have a directory or folder for your project.
 To follow along with this guide, you can create a folder called `simple_project` in any appropriate location on your local computer.
 (Or, you can clone this repo and use the `demos/simple_project` folder that is included.)
-Then, in VSC, under the `File` menu, click `Open folder`, 
+Then, in VS Code, under the `File` menu, click `Open folder`, 
 
 <img width="1487" height="381" alt="image" src="https://github.com/user-attachments/assets/908e8994-9553-46d5-917f-35d7f64f6d72" />
 
@@ -120,13 +136,12 @@ and click "Open".
 Alternatively, you can hit `Ctrl + k` followed by `Ctrl + o`, and browse to the correct folder.
 
 What does this do?
-It ensures that when Python is run it will have this folder as the *working directory*, i.e., the location where Python looks for files and saves output.
-Making sure that you start with this `open folder` step avoids a whole lot of problems related to file paths!
+It ensures that when Python is run it will have this folder as the *working directory*, i.e., the location where the Python interpreter looks for files and saves output.
+*Making sure that you start with this `open folder` step avoids a whole lot of problems related to file paths!*
 
-# 5. Create a script in VS Code
+# 7. Create a script in VS Code
 A *script* is just a text file with commands in Python or some other computer language.
 Python scripts are typically named with the `.py` extension, e.g., `simple1.py`. 
-Windows users may think there is a lot of magic in file extensions, but they are simply part of a file name.
 
 In VS Code you can create a new script with the `File` menu by selecting `New File` or `New Text File` (or using the keyboard shortcuts that are shown in the menu, e.g., `Ctrl + n`).
 You can now edit the file using the feature-rich script editor.
@@ -152,20 +167,16 @@ Then save the file with `Ctrl + s` or `Save` under the `File` menu.
 You should see that the default location is your project folder--perfect!
 
 Alternatively, you can open the `simple1.py` script that is included in this repo.
+But remember the `Open foler` step from above!
 
-# 6. Run a scrip in Python in "script mode"
-Under the `Terminal` menu select `New terminal.
-You should then see something like this at the bottom of your VSC window:
+# 8. Run a scrip in Python in "script mode"
+Under the `Terminal` menu select `New terminal`.
+You should then see something like this at the bottom of your VS Code window:
 
 <img width="1420" height="154" alt="image" src="https://github.com/user-attachments/assets/be613d51-ce46-4b61-a806-ea1f0f6e87d6" />
 
-How can you tell this is a PowerShell terminal?
-Take a look above.
-You should be able to tell because the prompt starts with `PS` and ends with `>`.
-Also, can you see the `powershell` label toward the upper right?
-
-So this is *not* a Python interpreter.
-But it *is* exactly what we need to run the `simpler1.py` script in Python in script mode.
+Now you can tell that this terminal pane is running PowerShell (right?).
+And that is exactly what we need to run the `simpler1.py` script in Python in *script mode*.
 To do that, click in the terminal window and enter this command:
 
 ```
@@ -186,6 +197,9 @@ Remember that this window is a PowerShell terminal, so you have access to comman
 <img width="1461" height="306" alt="image" src="https://github.com/user-attachments/assets/67b39692-4197-41c0-a640-662e1d2719da" />
 
 If you saw an error message about `python` not being recognized, check that you have actually installed Python.
+
+How is this any different from part 5 above?
+The key difference is that here we did the `open folder` step first, so we know that PowerShell is in the right directory, so Python will run in the right directory, and will be able to find our script.
 
 If you prefer clicking buttons, you can click this "Run in Python" button at the top right of VS Code:
 
@@ -220,8 +234,7 @@ What if you wrote another script with only this line:
 print(x)
 ```
 
-Would it in fact print the value of `x`, calculcated in the `simple1.py` script?
-
+Would it in fact print the value of `x`, calculcated in the `simple1.py` script, if you ran first `script1.py` and then `script2.py` in script mode?
 We can try to prove a point!
 
 <img width="1391" height="173" alt="image" src="https://github.com/user-attachments/assets/9f011eff-9814-4677-8682-337f8e335356" />
@@ -233,19 +246,18 @@ When we call `python simple1.py`, the Python interpreter is started, it runs the
 Whatever variables were created by code in the script are lost.
 For a different approach, see the next section.
 
-# 7. Interactive script development
-In many cases, especially when learning something new about Python, it is best to send only a single line or piece from a script.
-This lets you check code as you write it.
-And because the same instance of the Python interpreter stays open, any variables you created *persist*, that is until you close the interpreter.
+# 9. Interactive script development
+In many cases, especially when learning something new about Python, or developing a script with multiple steps, it is best to send only a single line or piece from a script.
+This lets you check code as you write it, and you can be sure exactly which lines cause errors.
+And because the same instance of the Python interpreter stays open, any variables you created *persist* until you close the Python interpreter.
 
 Let's keep working with the simple1.py script. 
-The simplest way to send a line of code is the `Shift + Enter`. 
+The simplest way to send a line of code is the `Shift + Enter` keyboard shortcut. 
 Here is what you should see if you try that:
 
 <img width="1199" height="163" alt="image" src="https://github.com/user-attachments/assets/aef04a53-7091-4dc2-a426-85a2ffc0ef91" />
 
-First, see that it worked.
-Second, it did the job by opening a Python interpreter, and then sending the line of code.
+It did the job by opening a Python interpreter, and then sending the single line of code.
 You can see the command for starting Python at the top.
 The telltale Python prompt is circled in bright green.
 And the line of code submitted to the interpreter is underlined in light blue.
@@ -260,15 +272,29 @@ So it is easy to run a few lines sequentially without moving your fingers from t
 But if you want to run several lines, you can highlight (select) them with the trackpad/mouse or keyboard (`Shift` and arrow keys) and hit `Shit + Enter` again.
 Simple!
 
+# 10. Troubleshooting
 
+Some problems can be solved by being aware of what is running in the terminal pane and making sure that the commands used (or automatically sent by clicking buttons) are appropriate.
+For example, if you use the `Shift + Enter` shortcut to run lines from a script, and then decide to run the entire script in Python in script mode, VS Code may send the *PowerShell* command to that terminal pane running the Python interpreter.
+That does not work!
+remember that you can see what is running by checking the prompts.
+How do you solve this problem?
+By closing ("killing") the pane running Python interactively and trying again.
+Now you should get PowerShell.
 
-
-
+# 10. Summary
+1. To work with Python in VS Code, always start by opening the project folder: Under the `File` menu, click `Open folder` or use the keyboard shortcut listed there. 
+2. To run the code in a Python script (in that project folder from step 1) in "script mode" you can either of these:
+    A. Open a terminal pane by selecting `New terminal` under the `Terminal` menu and type the normal script mode command `python script_name.py`
+    B. Click the `Run` button
+3. Use the `Shift + Enter` shortcut to run individual lines or selected blocks of code from a script
+4. Python can always be run interactively in a terminal pane after opening it by running `python`, but the other two options usually make more sense except for quickly checking some throwaway code
+5. In case of problems with VS Code buttons or shortcuts sending code or commands to the wrong (or just inappropriate) panes, close the offending panes and try again
 
 
 # Other resources
-https://realpython.com/interacting-with-python/
-https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-the-difference-between-interactive-and-script-mode-in-python-programming/
+* <https://realpython.com/interacting-with-python/>
+* <https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-the-difference-between-interactive-and-script-mode-in-python-programming/>
 
 
 
