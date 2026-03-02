@@ -16,7 +16,7 @@ You should recognize that other approaches (including Jupyter Notebooks) exist a
 This document is written in Markdown, and is meant to be viewed online, where GitHub will render the Markdown formatting and include images of the screenshots.
 
 Much of what is covered in this guide is specific to VS Code.
-But all Python code and PowerShell commands are could be applied outside of VS Code.
+But all Python code and PowerShell commands can be applied outside of VS Code.
 
 The rest of this guide includes:
 
