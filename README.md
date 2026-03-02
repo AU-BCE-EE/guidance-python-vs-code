@@ -245,6 +245,9 @@ If you prefer the button and the VS Code-spawned terminal pane, you can close th
 
 <img width="1387" height="84" alt="image" src="https://github.com/user-attachments/assets/5f602ae6-de5d-437b-8c92-a2d331b6efb2" />
 
+There is a keyboard shortcut for the `Run in Python` button: `Ctrl + F5`.
+(The first time you use it you will have to select a "debugger", and the recommendation is fine. It won't actually be used unless you just hit `F5` without the `Ctrl` key.)
+
 What if you wrote another script with only this line:
 
 ```
