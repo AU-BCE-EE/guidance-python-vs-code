@@ -10,8 +10,9 @@ It covers three main ways to use Python in VS Code:
 2. **Script mode** by calling Python and running script in shell non-interactively
 3. **Interactive script development** by sending script code by line or section to the Python interpreter
 
-These are not the only ways Python can be used in VS Code, but they are perfectly sufficient for the majority of our project and class needs.
-You should recognize that other approaches (including Jupyter Notebooks) exist and you may accidentially discover them in VS Code by clicking the wrong button!
+These are not the only ways Python can be used in VS Code, but they are a good fit for the majority of our project and class needs.
+There is also a notebook-style interface called the "Native REPL" that you might come across, and might actually prefer.
+It is not covered in this guide.
 
 This document is written in Markdown, and is meant to be viewed online, where GitHub will render the Markdown formatting and include images of the screenshots.
 
@@ -115,6 +116,9 @@ You should be able to tell because the prompt starts with `PS` and ends with `>`
 Also, can you see the `powershell` label toward the upper right?
 
 Click in that pane and type `python`, followed by hitting `Enter`.
+
+
+
 Now you are in an interactive Python session.
 Do you see that the prompt changed?
 This may be a quick way to check some ideas in Python, but for a couple reasons is not the best way to use Python in VS Code.
