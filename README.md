@@ -12,7 +12,10 @@ It covers three main ways to use Python in VS Code:
 
 These are not the only ways Python can be used in VS Code, but they are a good fit for the majority of our project and class needs.
 There is also a notebook-style interface called the "Native REPL" that you might come across, and might actually prefer.
-It is not covered in this guide.
+And VS Code has advanced debugging features that could be useful at some point, but can be overwhelming!
+Neither are covered in this guide.
+There is no good reason to try to learn about all the features VS Code offers from the start.
+Utlimately most users probably use a small subset anyway.
 
 This document is written in Markdown, and is meant to be viewed online, where GitHub will render the Markdown formatting and include images of the screenshots.
 
