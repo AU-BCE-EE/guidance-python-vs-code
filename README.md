@@ -300,7 +300,7 @@ How do you solve this problem?
 By closing ("killing") the pane running Python interactively and trying again.
 Now you should get PowerShell.
 
-# 10. Summary
+# 11. Summary
 1. To work with Python in VS Code, always start by opening the project folder: Under the `File` menu, click `Open folder` or use the keyboard shortcut listed there. 
 2. To run the code in a Python script (in that project folder from step 1) in "script mode" you can either of these:
     A. Open a terminal pane by selecting `New terminal` under the `Terminal` menu and type the normal script mode command `python script_name.py`
