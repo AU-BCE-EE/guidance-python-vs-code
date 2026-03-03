@@ -29,11 +29,11 @@ The rest of this guide includes:
 * running Python in PowerShell--script and interactive mode (section 4),
 * opening a terminal pane and running Python in VS Code (section 5),
 * **VS Code projects (section 6)**,
-* **Working with scripts in VS Code (section 7)**,
-* **Script mode Python usage in VS Code (section 8)**,
-* **Interactive script development and running (section 9)**,
+* **working with scripts in VS Code (section 7)**,
+* **script mode Python usage in VS Code (section 8)**,
+* **interactive script development and running (section 9)**,
 * troubleshooting (section 10), and
-* a summary (section 11)
+* a summary (section 11).
 
 Those section names shown in **bold** are key sections.
 
@@ -301,9 +301,8 @@ So it is easy to run a few lines sequentially without moving your fingers from t
 But if you want to run several lines, you can highlight (select) them with the trackpad/mouse or keyboard (`Shift` and arrow keys) and hit `Shift + Enter` again.
 Simple!
 
-# 10. Troubleshooting
-
-Some problems can be solved by being aware of what is running in the terminal pane and making sure that the commands used (or automatically sent by clicking buttons) are appropriate.
+# 10. What's running?
+Some problems can be solved by being aware of *what* is running in the terminal pane and making sure that the commands used (or automatically sent by clicking buttons) are appropriate.
 For example, if you use the `Shift + Enter` shortcut to run lines from a script, and then decide to run the entire script in Python in script mode, VS Code may send the *PowerShell* command to that terminal pane running the Python interpreter.
 That does not work!
 Remember that you can see what is running by checking the prompts.
@@ -312,13 +311,13 @@ By closing ("killing") the pane running Python interactively and trying again.
 Now you should get PowerShell.
 
 # 11. Summary
-1. To work with Python in VS Code, always start by opening the project folder: Under the `File` menu, click `Open folder` or use the keyboard shortcut listed there. 
+1. To work with Python in VS Code, always start by opening the project folder: Under the `File` menu, click `Open folder` or use the keyboard shortcut listed there. (Or, right-click in the folder in File Explorer, and select `Open in Viscual Studio Code`).
 2. To run the code in a Python script (in that project folder from step 1) in "script mode" you can either of these:
-    A. Open a terminal pane by selecting `New terminal` under the `Terminal` menu and type the normal script mode command `python script_name.py`
-    B. Click the `Run` button
-3. Use the `Shift + Enter` shortcut to run individual lines or selected blocks of code from a script
-4. Python can always be run interactively in a terminal pane after opening it by running `python`, but the other two options usually make more sense except for quickly checking some throwaway code
-5. In case of problems with VS Code buttons or shortcuts sending code or commands to the wrong (or just inappropriate) panes, close the offending panes and try again
+    A. Open a terminal pane by selecting `New terminal` under the `Terminal` menu and type the normal script mode command `python script_name.py`,
+    B. Click the `Run` button.
+3. Use the `Shift + Enter` shortcut to run individual lines or selected blocks of code from a script.
+4. Python can always be run interactively in a terminal pane after opening it by running `python`, but the other two options usually make more sense except for quickly checking some throwaway code.
+5. In case of problems with VS Code buttons or shortcuts sending code or commands to the wrong (or just inappropriate) panes, close ("trash"/"kill") the offending panes and try again.
 
 # Other resources
 * <https://realpython.com/interacting-with-python/>
